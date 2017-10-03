@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+    <script src="https://use.fontawesome.com/68aaaab0d2.js"></script>
+</head>
+
+<body class="styleguide">
+    <header class="row expanded">
+        <div class="logo column small-8 large-3"><img src="{{root}}assets/img/CoE-horiz-rev.svg" alt=""></div>
+    </header>
+    <div class="column row title">
+        <h1>Research Theme Style Guide</h1>
+    </div>
+    <div class="column row">
+        <div class="row align-justify">
+            <div class="small-12 medium-3 large-2 columns">
+                <div class="container" data-sticky-container>
+                    <nav data-sticky data-anchor="main" data-sticky-on="large">
+                        <ul class="vertical menu sidebar" data-magellan>
+                            <li class="sidebar-title"><span>Research</span></li>
+                            {{#each pages}}
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#{{ anchor }}">{{ title }}</a></li>
+                            {{/each}}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="small-12 medium-8 large-9 columns main" id="main">
+                {{#each pages}}
+                <section class="ss-section" id="{{ anchor }}" data-magellan-target="{{ anchor }}">
+                    {{ body }}
+                </section>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <footer class="row expanded align-center text-center">
+        <div class="small-12 medium-2 large-2 columns">
+            <a class="logo" href="{{root}}/index.html"><img src="{{root}}assets/img/CoE-block-m.svg" alt="College of Engineering | University of Michigan"></a>
+        </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
