@@ -996,8 +996,12 @@
         }
     }
     .section_title {
+        &.aud {
+            margin-top: 5rem;
+            margin-bottom: 1rem;
+        }
         hr {
-            border: 1px solid $tappan-red;
+            border: 1px solid $michigan-maize;
             margin: 0;
             max-width: none;
         }
