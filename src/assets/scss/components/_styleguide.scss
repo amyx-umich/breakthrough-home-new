@@ -145,6 +145,7 @@
                 }
                 .eyebrow {
                     font-family: $super-header-font-family;
+                    font-weight: $super-header-font-weight;
                     font-size: 1.25rem;
                     line-height: 1;
                     text-transform: uppercase;
@@ -212,6 +213,7 @@
         h6 {
             &.super-headings {
                 font-family: $super-header-font-family;
+                font-weight: $super-header-font-weight;
                 text-transform: uppercase;
             }
         }
