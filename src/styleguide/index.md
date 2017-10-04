@@ -1,6 +1,6 @@
 # About
 
-<p class="lead">This style guide is intended for the CoE department child theme: Research. It is generated and maintained by the <a href="https://cm.engin.umich.edu/" target="_blank">Michigan Engineering Office of Communications &amp; Marketing</a>.</p>
+<p class="lead">This style guide is intended for the CoE department child theme: Breakthrough. It is generated and maintained by the <a href="https://cm.engin.umich.edu/" target="_blank">Michigan Engineering Office of Communications &amp; Marketing</a>.</p>
 
 
 
@@ -298,6 +298,31 @@ These buttons are used for less important, secondary actions on a page.
 
 The grid is built around two key elements: row and columns. `.row` creates a max-width and contain the grid, and `.columns` create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or columns.
 
+### Details on Gutters, Margins, and Padding
+
+Here are the <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="A scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.">SASS</span> variables regarding the maximum width of the theme, breakpoints, columns, and block grid.
+
+```html
+$global-width: rem-calc(1300);
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1300px,
+  xxlarge: 1440px,
+);
+$breakpoint-classes: (small medium large xlarge xxlarge);
+$grid-row-width: $global-width;
+$grid-column-count: 12;
+$grid-column-gutter: (
+  small: 20px,
+  medium: 30px,
+);
+$grid-column-align-edge: true;
+$grid-column-alias: 'columns';
+$block-grid-max: 8;
+```
+
 ---
 
 ### Nesting
@@ -557,7 +582,7 @@ Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
 
 # Typography
 
-<p class="lead">This design uses Bebas Neue Bold for super-headings, <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a> for headings and subheadings, and <a href="https://fonts.google.com/specimen/Noto+Serif" target="_blank">Noto Serif</a> paragraph text.</p>
+<p class="lead">This design uses <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for section headings, headlines and subheadings, and <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> paragraph text.</p>
 
 ---
 

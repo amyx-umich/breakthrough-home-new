@@ -15,7 +15,7 @@
         <div class="logo column small-8 large-3"><img src="assets/img/CoE-horiz-rev.svg" alt=""></div>
     </header>
     <div class="column row title">
-        <h1>Research Theme Style Guide</h1>
+        <h1>Breakthrough Theme Style Guide</h1>
     </div>
     <div class="column row">
         <div class="row align-justify">
@@ -23,7 +23,7 @@
                 <div class="container" data-sticky-container>
                     <nav data-sticky data-anchor="main" data-sticky-on="large">
                         <ul class="vertical menu sidebar" data-magellan>
-                            <li class="sidebar-title"><span>Research</span></li>
+                            <li class="sidebar-title"><span>Breakthrough</span></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#about">About</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#breadcrumbs">Breadcrumbs</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#buttons">Buttons</a></li>
@@ -44,7 +44,7 @@
             </div>
             <div class="small-12 medium-8 large-9 columns main" id="main">
                 <section class="ss-section" id="about" data-magellan-target="about">
-                    <h1>About</h1><p class="lead">This style guide is intended for the CoE department child theme: Research. It is generated and maintained by the <a href="https://cm.engin.umich.edu/" target="_blank">Michigan Engineering Office of Communications &amp; Marketing</a>.</p>
+                    <h1>About</h1><p class="lead">This style guide is intended for the CoE department child theme: Breakthrough. It is generated and maintained by the <a href="https://cm.engin.umich.edu/" target="_blank">Michigan Engineering Office of Communications &amp; Marketing</a>.</p>
                 </section>
                 <section class="ss-section" id="breadcrumbs" data-magellan-target="breadcrumbs">
                     <h1>Breadcrumbs</h1><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"You are here:"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"navigation"</span>&gt;</span>
@@ -412,7 +412,25 @@
 
 <hr>
 <h3>Overview</h3><p>The grid is built around two key elements: row and columns. <code>.row</code> creates a max-width and contain the grid, and <code>.columns</code> create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a row or columns.</p>
-<hr>
+<h3>Details on Gutters, Margins, and Padding</h3><p>Here are the <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="A scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.">SASS</span> variables regarding the maximum width of the theme, breakpoints, columns, and block grid.</p>
+<div class="ss-code"><pre><code class="html">$global-width: rem-calc(1300);
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1300px,
+  xxlarge: 1440px,
+);
+$breakpoint-classes: (small medium large xlarge xxlarge);
+$grid-row-width: $global-width;
+$grid-column-count: 12;
+$grid-column-gutter: (
+  small: 20px,
+  medium: 30px,
+);
+$grid-column-align-edge: true;
+$grid-column-alias: 'columns';
+$block-grid-max: 8;</code></pre></div><hr>
 <h3>Nesting</h3><p>In the Grid you can nest columnss down as far as you&#39;d like. Just embed row inside columnss and go from there. Each embedded row can contain up to 12 columnss.</p>
 <hr>
 <h3>How to Use</h3><p>Using this framework is easy. Here&#39;s how your code will look when you use a series of <code>&lt;div&gt;</code> tags to create columnss.</p>
@@ -647,7 +665,7 @@ Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
 </table></div>
                 </section>
                 <section class="ss-section" id="typography" data-magellan-target="typography">
-                    <h1>Typography</h1><p class="lead">This design uses Bebas Neue Bold for super-headings, <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a> for headings and subheadings, and <a href="https://fonts.google.com/specimen/Noto+Serif" target="_blank">Noto Serif</a> paragraph text.</p>
+                    <h1>Typography</h1><p class="lead">This design uses <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for section headings, headlines and subheadings, and <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> paragraph text.</p>
 
 <hr>
 <h3>Headings</h3><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>

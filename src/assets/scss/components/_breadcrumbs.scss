@@ -7,10 +7,10 @@
     text-transform: uppercase;
     li {
         a {
-            color: $tappan-red;
+            color: $michigan-blue;
             transition: all .2s ease-in-out;
             &:hover {
-                color: $black;
+                color: $arboretum-blue;
                 text-decoration: underline;
             }
         }
