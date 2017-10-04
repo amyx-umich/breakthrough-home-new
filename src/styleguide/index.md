@@ -5,6 +5,20 @@
 
 
 
+# Accessibility
+
+<p class="lead">In addition to the accessibility features built into the theme's components, be sure to follow best practices for making your site more accessible. <i>this will be added to in more detail as they're worked out</i></p> 
+
+* Structure your document properly. Use the right HTML tags for the job when marking up navigation, lists, links, controls, and so on.
+* Label everything. If a control or form element has no text label, add one. You can use the visibility classes to hide labels visually while maintaining accessibility. Use the alt attribute on all images to describe what they are.
+* Don't rely on purely visual cues. The content of a page should make sense even if page is being read to the user, or if the user is colorblind and can't make use of color-based labeling.
+* Make everything usable on a keyboard and mouse. All of our components work with keyboards, mice, and touch screens out of the box.
+
+* http://webaccess.hr.umich.edu/
+* https://www.w3.org/TR/2008/REC-WCAG20-20081211/
+
+
+
 # Breadcrumbs
 
 ```html_example
@@ -49,8 +63,7 @@ These buttons are used for less important, secondary actions on a page.
 <a href="#" class="secondary tiny button">Tiny button</a>
 ```
 
----
-
+--
 
 ### Other Button Colors
 
@@ -129,6 +142,9 @@ These buttons are used for less important, secondary actions on a page.
     </div>
     <div class="column">
         <div class="card">
+            <div class="card-divider">
+                <p>Featured</p>
+            </div>
             <div class="card-section">
                 <h4>Your title here!</h4>
                 <p>An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
@@ -161,6 +177,9 @@ These buttons are used for less important, secondary actions on a page.
     </div>
     <div class="column">
         <div class="card text-center">
+            <div class="card-divider">
+                <p>Centered</p>
+            </div>
             <img src="assets/img/aud-01.jpg">
             <div class="card-section">
                 <p>The utility classes like .text-center work great too.</p>
@@ -287,6 +306,13 @@ These buttons are used for less important, secondary actions on a page.
 </div>
 
 
+--
+
+### Contrast
+
+We must conform to WCAG AA. Use <a href="https://webaim.org/resources/contrastchecker/" target="_blank">this contrast checker</a> when using custom color combinations in the WYSIWYG.
+
+
 
 # The Grid
 
@@ -297,6 +323,8 @@ These buttons are used for less important, secondary actions on a page.
 ### Overview
 
 The grid is built around two key elements: row and columns. `.row` creates a max-width and contain the grid, and `.columns` create the final structure. Everything on your page that you don't give a specific structural style to should be within a row or columns.
+
+---
 
 ### Details on Gutters, Margins, and Padding
 
@@ -450,6 +478,91 @@ As you've probably noticed in the examples above, you have access to a small, me
 </div>
 
 
+---
+
+
+### SVGs
+We're currently offering a limited number, but will add more on an as-needed basis.
+<div class="row small-up-3 large-up-8 text-center">
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+        </div>
+        <div class="word">Award</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+        </div>
+        <div class="word">Globe</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+        </div>
+        <div class="word">Briefcase</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+        </div>
+        <div class="word">Eye</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud-rain">
+                <line x1="16" y1="13" x2="16" y2="21"></line>
+                <line x1="8" y1="13" x2="8" y2="21"></line>
+                <line x1="12" y1="15" x2="12" y2="23"></line>
+                <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>
+            </svg>
+        </div>
+        <div class="word">Rain cloud</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+        </div>
+        <div class="word">CPU</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+        </div>
+        <div class="word">Users</div>
+    </div>
+</div>
+
+
 
 # Images
 
@@ -487,6 +600,51 @@ As you've probably noticed in the examples above, you have access to a small, me
 <div class="image">
   <img src="assets/img/research-img-02.jpg" alt="">
   <span class="secondary label overlay">3:4 ratio, 1278 × 1500 pixels upload size</span>
+</div>
+
+---
+
+## Image treatments
+
+<p class="lead">The theme will take care of the duotones. Within certain fields in the backend, you will have a selection of duotones you can use over uploaded images. Please note that not every image will work. Use your best judgement on what works and does not. However, desaturated images tend to work best with duotones.</p>
+
+<div class="row collapse small-up-1 medium-up-3 large-up-3">
+    <div class="image duotones columns">
+        <div class="blue-duotone" style="background-image: url('assets/img/duotone-src.jpg');"></div>
+        <span class="secondary label overlay">Blue Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="dark-blue-duotone" style="background-image: url('assets/img/duotone-src.jpg');"></div>
+        <span class="secondary label overlay">Dark Blue Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="red-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Red Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="yellow-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Yellow Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="purple-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Purple Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="green-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Green Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="orange-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Orange Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="blend-red-blue-dark" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Blue Red Blend Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="blend-blue-yellow-light" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Yellow Blue Blend Duotone</span>
+    </div>
 </div>
 
 
@@ -582,21 +740,36 @@ Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
 
 # Typography
 
-<p class="lead">This design uses <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for section headings, headlines and subheadings, and <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> paragraph text.</p>
+<p class="lead">This design uses <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for section headings, headlines and subheadings, and <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> paragraph text. Base type is set at 100%(16 px).</p>
 
 ---
 
 ### Headings
 
-Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)
+Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest). Whenever possible try not to skip heading levels.
 
----
+#### Header Styles
 
-### Paragraphs
+The theme includes two typographic scales—one uses a narrow range of sizes for small-sized screens, and the other uses a wider range of sizes for medium- and larger-sized screens.
 
-Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
-
----
+```html
+small: (
+    'h1': ('font-size': 24),
+    'h2': ('font-size': 20),
+    'h3': ('font-size': 19),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
+  ),
+  medium: (
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 40),
+    'h3': ('font-size': 31),
+    'h4': ('font-size': 25),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+)
+```
 
 <h1 class="super-headings">Super Heading h1</h1>
 
@@ -623,6 +796,12 @@ Paragraphs are groups of sentences, each with a lead (first sentence) and transi
 <h5>Heading h5</h5>
 
 <h6>Heading h6</h6>
+
+---
+
+### Paragraphs
+
+Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Line heights are set at 1.6 times the font size. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.
 
 ---
 

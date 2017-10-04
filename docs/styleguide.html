@@ -25,6 +25,7 @@
                         <ul class="vertical menu sidebar" data-magellan>
                             <li class="sidebar-title"><span>Breakthrough</span></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#about">About</a></li>
+                            <li><a data-smooth-scroll data-animation-easing="swing" href="#accessibility">Accessibility</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#breadcrumbs">Breadcrumbs</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#buttons">Buttons</a></li>
                             <li><a data-smooth-scroll data-animation-easing="swing" href="#callouts">Callouts</a></li>
@@ -45,6 +46,21 @@
             <div class="small-12 medium-8 large-9 columns main" id="main">
                 <section class="ss-section" id="about" data-magellan-target="about">
                     <h1>About</h1><p class="lead">This style guide is intended for the CoE department child theme: Breakthrough. It is generated and maintained by the <a href="https://cm.engin.umich.edu/" target="_blank">Michigan Engineering Office of Communications &amp; Marketing</a>.</p>
+                </section>
+                <section class="ss-section" id="accessibility" data-magellan-target="accessibility">
+                    <h1>Accessibility</h1><p class="lead">In addition to the accessibility features built into the theme&#39;s components, be sure to follow best practices for making your site more accessible. <i>this will be added to in more detail as they&#39;re worked out</i></p> 
+
+<ul>
+<li>Structure your document properly. Use the right HTML tags for the job when marking up navigation, lists, links, controls, and so on.</li>
+<li>Label everything. If a control or form element has no text label, add one. You can use the visibility classes to hide labels visually while maintaining accessibility. Use the alt attribute on all images to describe what they are.</li>
+<li>Don&#39;t rely on purely visual cues. The content of a page should make sense even if page is being read to the user, or if the user is colorblind and can&#39;t make use of color-based labeling.</li>
+<li><p>Make everything usable on a keyboard and mouse. All of our components work with keyboards, mice, and touch screens out of the box.</p>
+</li>
+<li><p><a href="http://webaccess.hr.umich.edu/">http://webaccess.hr.umich.edu/</a></p>
+</li>
+<li><a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/">https://www.w3.org/TR/2008/REC-WCAG20-20081211/</a></li>
+</ul>
+
                 </section>
                 <section class="ss-section" id="breadcrumbs" data-magellan-target="breadcrumbs">
                     <h1>Breadcrumbs</h1><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"You are here:"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"navigation"</span>&gt;</span>
@@ -86,7 +102,7 @@
 <div class="ss-code-live"><a href="#" class="secondary large button">Large button</a>
 <a href="#" class="secondary button">Regular button</a>
 <a href="#" class="secondary small button">Small button</a>
-<a href="#" class="secondary tiny button">Tiny button</a></div><hr>
+<a href="#" class="secondary tiny button">Tiny button</a></div><p>--</p>
 <h3>Other Button Colors</h3><div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"success large button"</span>&gt;</span>Large button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert button"</span>&gt;</span>Regular button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"warning small button"</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre></div>
@@ -186,6 +202,9 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"column"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-divider"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Featured<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-section"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>Your title here!<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
@@ -218,6 +237,9 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"column"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card text-center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-divider"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Centered<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"assets/img/aud-01.jpg"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-section"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>The utility classes like .text-center work great too.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
@@ -254,6 +276,9 @@
     </div>
     <div class="column">
         <div class="card">
+            <div class="card-divider">
+                <p>Featured</p>
+            </div>
             <div class="card-section">
                 <h4>Your title here!</h4>
                 <p>An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
@@ -286,6 +311,9 @@
     </div>
     <div class="column">
         <div class="card text-center">
+            <div class="card-divider">
+                <p>Centered</p>
+            </div>
             <img src="assets/img/aud-01.jpg">
             <div class="card-section">
                 <p>The utility classes like .text-center work great too.</p>
@@ -406,12 +434,18 @@
     </div>
   </div>
 </div>
+
+
+<p>--</p>
+<h3>Contrast</h3><p>We must conform to WCAG AA. Use <a href="https://webaim.org/resources/contrastchecker/" target="_blank">this contrast checker</a> when using custom color combinations in the WYSIWYG.</p>
+
                 </section>
                 <section class="ss-section" id="the-grid" data-magellan-target="the-grid">
                     <h1>The Grid</h1><p class="lead">This is just an explanation of the grid we&#39;re using. Most likely you won&#39;t need to add it to any page templates. The Grid is powered by Flexbox. For more in-depth details regarding The Grid, please see <a href="https://foundation.zurb.com/sites/docs/flex-grid.html">Foundation&#39;s documentation</a>.</p>
 
 <hr>
 <h3>Overview</h3><p>The grid is built around two key elements: row and columns. <code>.row</code> creates a max-width and contain the grid, and <code>.columns</code> create the final structure. Everything on your page that you don&#39;t give a specific structural style to should be within a row or columns.</p>
+<hr>
 <h3>Details on Gutters, Margins, and Padding</h3><p>Here are the <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1 title="A scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.">SASS</span> variables regarding the maximum width of the theme, breakpoints, columns, and block grid.</p>
 <div class="ss-code"><pre><code class="html">$global-width: rem-calc(1300);
 $breakpoints: (
@@ -523,6 +557,88 @@ $block-grid-max: 8;</code></pre></div><hr>
 <h3>Font Awesome</h3><div class="icon-fonts"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i> <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>  <i class="fa fa-instagram fa-lg" aria-hidden="true"></i> <i class="fa fa-flickr fa-lg" aria-hidden="true"></i> <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> <i class="fa fa-youtube fa-lg" aria-hidden="true"></i> <i class="fa fa-snapchat-ghost fa-lg" aria-hidden="true"></i> <i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></div>
 <div class="icon-fonts"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i> <i class="fa fa-angle-double-left fa-lg" aria-hidden="true"></i> <i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i> <i class="fa fa-external-link" aria-hidden="true"></i> <i class="fa fa-envelope-o" aria-hidden="true"></i> <i class="fa fa-close" aria-hidden="true"></i> <i class="fa fa-camera" aria-hidden="true"></i>
 </div>
+
+
+<hr>
+<h3>SVGs</h3><p>We&#39;re currently offering a limited number, but will add more on an as-needed basis.</p>
+<div class="row small-up-3 large-up-8 text-center">
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+        </div>
+        <div class="word">Award</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+        </div>
+        <div class="word">Globe</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+        </div>
+        <div class="word">Briefcase</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+        </div>
+        <div class="word">Eye</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud-rain">
+                <line x1="16" y1="13" x2="16" y2="21"></line>
+                <line x1="8" y1="13" x2="8" y2="21"></line>
+                <line x1="12" y1="15" x2="12" y2="23"></line>
+                <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>
+            </svg>
+        </div>
+        <div class="word">Rain cloud</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+            </svg>
+        </div>
+        <div class="word">CPU</div>
+    </div>
+    <div class="icon column">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+        </div>
+        <div class="word">Users</div>
+    </div>
+</div>
                 </section>
                 <section class="ss-section" id="images" data-magellan-target="images">
                     <h1>Images</h1><p class="lead">Images appear on the site in four different aspect ratios: 20:9, 3:2, 3:4, and 1:1.</p>
@@ -551,6 +667,48 @@ $block-grid-max: 8;</code></pre></div><hr>
 <h3>Research row images</h3><div class="image">
   <img src="assets/img/research-img-02.jpg" alt="">
   <span class="secondary label overlay">3:4 ratio, 1278 × 1500 pixels upload size</span>
+</div>
+
+<hr>
+<h2>Image treatments</h2><p class="lead">The theme will take care of the duotones. Within certain fields in the backend, you will have a selection of duotones you can use over uploaded images. Please note that not every image will work. Use your best judgement on what works and does not. However, desaturated images tend to work best with duotones.</p>
+
+<div class="row collapse small-up-1 medium-up-3 large-up-3">
+    <div class="image duotones columns">
+        <div class="blue-duotone" style="background-image: url('assets/img/duotone-src.jpg');"></div>
+        <span class="secondary label overlay">Blue Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="dark-blue-duotone" style="background-image: url('assets/img/duotone-src.jpg');"></div>
+        <span class="secondary label overlay">Dark Blue Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="red-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Red Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="yellow-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Yellow Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="purple-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Purple Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="green-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Green Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="orange-duotone" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Orange Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="blend-red-blue-dark" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Blue Red Blend Duotone</span>
+    </div>
+    <div class="image duotones columns">
+        <div class="blend-blue-yellow-light" style="background-image: url('assets/img/duotone-src.jpg');">asdf</div>
+        <span class="secondary label overlay">Yellow Blue Blend Duotone</span>
+    </div>
 </div>
                 </section>
                 <section class="ss-section" id="labels" data-magellan-target="labels">
@@ -665,14 +823,27 @@ Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
 </table></div>
                 </section>
                 <section class="ss-section" id="typography" data-magellan-target="typography">
-                    <h1>Typography</h1><p class="lead">This design uses <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for section headings, headlines and subheadings, and <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> paragraph text.</p>
+                    <h1>Typography</h1><p class="lead">This design uses <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for section headings, headlines and subheadings, and <a href="https://fonts.google.com/specimen/Lora" target="_blank">Lora</a> paragraph text. Base type is set at 100%(16 px).</p>
 
 <hr>
-<h3>Headings</h3><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>
-<hr>
-<h3>Paragraphs</h3><p>Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-<hr>
-<h1 class="super-headings">Super Heading h1</h1>
+<h3>Headings</h3><p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest). Whenever possible try not to skip heading levels.</p>
+<h4>Header Styles</h4><p>The theme includes two typographic scales—one uses a narrow range of sizes for small-sized screens, and the other uses a wider range of sizes for medium- and larger-sized screens.</p>
+<div class="ss-code"><pre><code class="html">small: (
+    'h1': ('font-size': 24),
+    'h2': ('font-size': 20),
+    'h3': ('font-size': 19),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 17),
+    'h6': ('font-size': 16),
+  ),
+  medium: (
+    'h1': ('font-size': 48),
+    'h2': ('font-size': 40),
+    'h3': ('font-size': 31),
+    'h4': ('font-size': 25),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+)</code></pre></div><h1 class="super-headings">Super Heading h1</h1>
 
 <h2 class="super-headings">Super Heading h2</h2>
 
@@ -697,6 +868,8 @@ Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus
 
 <h6>Heading h6</h6>
 
+<hr>
+<h3>Paragraphs</h3><p>Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such. Line heights are set at 1.6 times the font size. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 <hr>
 <h3>Eyebrows</h3><p class="lead">Eyebrows appear atop headlines in certain cases. They usually denote a category the item appears in.</p>
 
